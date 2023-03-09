@@ -1,17 +1,29 @@
-header{
+header {
     display: flex;
-    justify-content:space-evenly ;
+    justify-content:space-between;
+    background-color:lavenderblush;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 3;
     align-items: center;
 }
-.line-container ul{
-    display:flex;
-    list-style-type:none;
+
+.flex-container {
+    display: flex;   
+    float: right;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.line-container li a{
-    text-decoration: none;
+.flex-container ul li{
+    list-style-type: none;
 }
-body{
+
+body {
     background-image: url("./images/background.jpg");
 
+}
+h2{
+    font-size: large;
+    fl
 }
