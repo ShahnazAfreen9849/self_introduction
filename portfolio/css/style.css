@@ -25,5 +25,44 @@ body {
 }
 h2{
     font-size: large;
-    fl
+}
+.contact-info{
+border-style: square;
+ background-color: lightblue;
+  border: solid black 1px;
+  height: 100px;
+  inline-size: 200px;
+}
+
+.about{
+    height: 600px;
+  background-color: pink;
+}
+.education {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 3/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: end;
+  scroll-margin-bottom: 20px;
 }
