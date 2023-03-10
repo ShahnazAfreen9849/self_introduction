@@ -1,59 +1,85 @@
 header {
-    display: flex;
-    justify-content:space-between;
-    background-color:lavenderblush;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 3;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(232, 147, 232);
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 3;
+  align-items: center;
 }
 
 .flex-container {
-    
-    justify-content: space-between;
-    align-items: center;
-            box-sizing: border-box;
-        padding: 50px;
-        background-color: green;
-        transition: transform .2s;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-}
-      
-      .flex-container:hover {
-        -ms-transform: scale(1.5); /* IE 9 */
-        -webkit-transform: scale(1.5); /* Safari 3-8 */
-        transform: scale(1.5); 
-      }
 
-.flex-container ul{
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing:border-box;
+  padding: 30px;
+  background-color: rgb(232, 147, 232);
+  transition: transform .2s;
+  height: 50px;
+  margin: 10px;
+  width: 900px;
+  font-family: 'Times New Roman', Times, serif;
 }
-.flex-container ul li{
-    list-style-type: none;
-    
+
+.flex-container:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.flex-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.flex-container li {
+  
+  font-size: larger;
+  list-style-type:none;
+  white-space:normal;
+  display:block;
+	width:100px;
+	float:right;
+	margin:2px;
+	border:#fff;
+
+
+}
+#flex-container a {
+  float:left;
+	display:flex;
+	padding:2px;
+	text-decoration:none;
+	background-color:#fff;
+	color:rgba(3, 3, 3, 0.457);
 }
 
 body {
-    background-image: url("./images/background.jpg");
+  background-image: url("./images/background.jpg");
 
 }
-h2{
-    font-size: large;
+
+h2 {
+  font-size: large;
 }
-.contact-info{
-border-style: square;
- background-color: lightblue;
+
+.contact-info {
+  border-style: square;
+  background-color: none;
   border: solid black 1px;
   height: 100px;
   inline-size: 200px;
 }
 
-.about{
-    height: 600px;
-  background-color: pink;
+.about {
+  height: 200px;
+  background-color:none;
 }
+
 .education {
   position: relative;
   width: 80%;
@@ -77,8 +103,38 @@ border-style: square;
   aspect-ratio: 4/1;
 }
 
-.blue, .green {
+.blue,
+.green {
   margin: 2px;
   scroll-snap-align: end;
   scroll-margin-bottom: 20px;
+}
+
+.about{
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+
+}
+
+
+.intro{
+  font-size: 25px;
+  text-align:center;
+  margin: 20px;
+  padding-bottom: 70px;
+  font-size: medium;
+  color: beige;
+  
+
+}
+img{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  overflow-clip-margin:  content-box;
+  overflow:clip;
+  border-radius: 50px;
+  opacity: 0.7;
 }
