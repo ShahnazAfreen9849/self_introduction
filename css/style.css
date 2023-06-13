@@ -1,3 +1,46 @@
-body{
+body {
+    display: flex;
+    background-color: blanchedalmond;
+    margin: 0;
+
+}
+
+.qualifications img {
+    width: 100px;
+
+}
+
+.profile-pic {
+    width: 150px;
+}
+
+.banner {
+    background-color: aliceblue;
+    display: flex;
+
+}
+
+header {
+    background-color: slategray;
+
+}
+
+header a {
+    color: white;
+}
+
+.about-me {
+    background-color: coral;
+    border: 5px solid yellowgreen;
+
+}
+
+.credentials{
     display:flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+
+.credentials div{
+flex: 1 1 50%;
 }
