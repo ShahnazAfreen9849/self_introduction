@@ -1,8 +1,8 @@
 body {
     display: flex;
-    background-color: blanchedalmond;
     margin: 0;
-
+    background-color: #1b1b1b;
+    color: rgb(225, 225, 225);
 }
 
 .qualifications img {
@@ -11,17 +11,33 @@ body {
 }
 
 .profile-pic {
-    width: 150px;
+    background-color: #000;
+    border: 6px inset #6a737d;
+    border-radius: 8px;
+    width: 300px;
+
 }
 
 .banner {
-    background-color: aliceblue;
+    background-image: url('/images/background.jpg');
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10.5rem 4.875rem;
 
+}
+
+.banner h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 3px 4px black;
 }
 
 header {
     background-color: slategray;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 
 }
 
@@ -29,18 +45,37 @@ header a {
     color: white;
 }
 
-.about-me {
-    background-color: coral;
-    border: 5px solid yellowgreen;
-
+header nav {
+    position: sticky;
+    top: 10px;
 }
 
-.credentials{
-    display:flex;
-    background-color: aqua;
+.about-me {
+    color: white;
+    border: 5px solid;
+    padding: 10px;
+}
+
+.credentials {
+    display: flex;
     flex-wrap: wrap;
 }
 
-.credentials div{
-flex: 1 1 50%;
+.credentials div {
+    flex: 1 1 50%;
+}
+
+#portfolio {
+    border: 5px solid whitesmoke;
+}
+
+.icons img {
+    width: 80px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: dodgerblue;
 }
